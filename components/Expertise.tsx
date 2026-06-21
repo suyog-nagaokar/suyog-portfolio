@@ -7,7 +7,7 @@ export default function Expertise() {
         <div className="mb-12 md:mb-16">
           <div className="font-mono text-[12px] text-cyan mb-3">expertise</div>
           <h2 className="font-display font-semibold text-2xl md:text-[32px] text-ink tracking-tight">
-            Three stacks, thirteen years.
+            Three stacks, 13+ years.
           </h2>
         </div>
 

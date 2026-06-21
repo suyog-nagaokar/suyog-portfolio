@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Suyog Nagaokar — Data Engineering Leader",
   description:
-    "Data Engineering Leader with 13 years building enterprise data platforms across banking, payments, insurance, and telecom. Targeting Lead Data Engineer / Data Engineering Manager roles.",
+    "Data Engineering Leader with 13+ years building enterprise data platforms across banking, payments, insurance, and telecom. Targeting Lead Data Engineer / Data Engineering Manager roles.",
 };
 
 export default function RootLayout({

@@ -7,15 +7,15 @@ export const profile = {
   phone: "+66-0948198599",
   linkedin: "https://linkedin.com/in/suyog-nagaokar",
   linkedinDisplay: "linkedin.com/in/suyog-nagaokar",
-  years: "13",
-  headline: "Thirteen years making sure the data is right before the money moves.",
+  years: "13+",
+  headline: "13+ years making sure the data is right before the money moves.",
   summary:
     "I lead data engineering teams that build the systems banks, payment platforms, and telecom companies run their fraud detection, reconciliation, and reporting on. The stack changes by client and by decade — what doesn't change is the job: make the data trustworthy enough to act on. I use GenAI tooling to move faster without skipping the governance enterprise platforms demand.",
   targetRoles: "Lead Data Engineer & Data Engineering Manager",
 };
 
 export const heroStats = [
-  { value: "13", label: "Years in data engineering", suffix: "yrs" },
+  { value: "13+", label: "Years in data engineering", suffix: "yrs" },
   { value: "$65K+", label: "Saved in 6 months on a banking fraud platform", suffix: "" },
   { value: "8", label: "Engineers led through a platform re-architecture", suffix: "" },
   { value: "8x", label: "Faster batch pipeline — 8 hours down to under 1", suffix: "" },

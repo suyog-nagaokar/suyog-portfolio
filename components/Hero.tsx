@@ -14,7 +14,7 @@ export default function Hero() {
             </div>
 
             <h1 className="font-display font-semibold text-[2.5rem] leading-[1.05] md:text-[3.4rem] md:leading-[1.04] tracking-tight text-ink">
-              Thirteen years making
+              13+ years making
               <br />
               sure the data is right
               <br />
@@ -61,9 +61,6 @@ export default function Hero() {
                   className="object-cover grayscale-[15%]"
                   priority
                 />
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-panel-raised border border-hairline-bright px-3 py-2 font-mono text-[11px] text-ink-dim">
-                <span className="text-amber">13yr</span> · data eng
               </div>
             </div>
           </div>

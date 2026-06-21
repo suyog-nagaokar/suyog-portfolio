@@ -8,7 +8,7 @@ export default function Experience() {
           <div>
             <div className="font-mono text-[12px] text-cyan mb-3">experience</div>
             <h2 className="font-display font-semibold text-2xl md:text-[32px] text-ink tracking-tight">
-              Thirteen years, one log.
+              13+ years, one log.
             </h2>
           </div>
           <div className="font-mono text-[12px] text-ink-faint">
