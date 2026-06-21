@@ -7,11 +7,11 @@ export default function Expertise() {
         <div className="mb-12 md:mb-16">
           <div className="font-mono text-[12px] text-cyan mb-3">expertise</div>
           <h2 className="font-display font-semibold text-2xl md:text-[32px] text-ink tracking-tight">
-            Three stacks, 13+ years.
+            Four stacks, 13+ years.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-hairline border border-hairline">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hairline border border-hairline">
           {expertiseStacks.map((stack) => (
             <div key={stack.name} className="bg-base p-6 md:p-7 flex flex-col">
               <div className="w-8 h-px bg-amber mb-4" aria-hidden="true" />

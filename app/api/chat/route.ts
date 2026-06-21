@@ -25,7 +25,7 @@ Headline: ${profile.headline}
 ${profile.summary}
 Targeting: ${profile.targetRoles} roles.
 
-=== CORE EXPERTISE (3 stacks spanning his career) ===
+=== CORE EXPERTISE (4 stacks spanning his career) ===
 ${expertiseStacks
   .map((s) => `${s.name}: ${s.description} Tools: ${s.tools.join(", ")}`)
   .join("\n\n")}

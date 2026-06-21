@@ -21,13 +21,19 @@ export const heroStats = [
   { value: "8x", label: "Faster batch pipeline — 8 hours down to under 1", suffix: "" },
 ];
 
-// 2-3 powerful stacks pulled from across the resume, not tied to one project
+// 4 powerful stacks pulled from across the resume, not tied to one project
 export const expertiseStacks = [
   {
     name: "Real-Time & Fraud",
     description:
       "Streaming pipelines that catch fraud and reconcile transactions as they happen — built at a payments company and one of India's largest private banks.",
     tools: ["Kafka", "Spark Streaming", "Hive", "PySpark", "Grafana", "Streamlit"],
+  },
+  {
+    name: "AWS at Scale",
+    description:
+      "Production AWS architecture across three companies — serverless batch processing, real-time ingestion, and cost-optimized analytics on data lakes handling TB-scale workloads.",
+    tools: ["EMR Serverless", "Glue", "Athena", "Redshift", "Lambda", "Step Functions", "S3", "CodePipeline"],
   },
   {
     name: "Modern Lakehouse",
