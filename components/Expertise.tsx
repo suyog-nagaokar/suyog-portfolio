@@ -18,10 +18,10 @@ export default function Expertise() {
               <h3 className="font-display font-semibold text-[18px] text-ink mb-3">
                 {stack.name}
               </h3>
-              <p className="text-ink-dim text-[14px] leading-relaxed mb-5 flex-1">
+              <p className="text-ink-dim text-[14px] leading-relaxed mb-5 min-h-[105px] md:min-h-[95px]">
                 {stack.description}
               </p>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-1.5 mt-auto">
                 {stack.tools.map((tool) => (
                   <span
                     key={tool}

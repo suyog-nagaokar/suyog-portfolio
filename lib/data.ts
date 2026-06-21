@@ -32,8 +32,8 @@ export const expertiseStacks = [
   {
     name: "AWS at Scale",
     description:
-      "Production AWS architecture across three companies — serverless batch processing, real-time ingestion, and cost-optimized analytics on data lakes handling TB-scale workloads.",
-    tools: ["EMR Serverless", "Glue", "Athena", "Redshift", "Lambda", "Step Functions", "S3", "CodePipeline"],
+      "Serverless batch processing, real-time ingestion, and cost-optimized analytics — production AWS across three companies handling TB-scale workloads.",
+    tools: ["EMR Serverless", "Glue", "Athena", "Redshift", "Lambda", "S3", "Step Functions", "CodePipeline"],
   },
   {
     name: "Modern Lakehouse",
