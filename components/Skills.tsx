@@ -12,13 +12,13 @@ export default function Skills() {
           </h2>
         </div>
 
-        <div className="columns-1 sm:columns-2 lg:columns-4 gap-px [&>*]:mb-px">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hairline border border-hairline">
           {entries.map(([category, items]) => (
-            <div key={category} className="bg-base border border-hairline p-6 md:p-7 break-inside-avoid">
+            <div key={category} className="bg-base p-6 md:p-7 flex flex-col">
               <h3 className="font-mono text-[12px] text-amber uppercase tracking-wide mb-4">
                 {category}
               </h3>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-1.5 content-start">
                 {items.map((item) => (
                   <span
                     key={item}

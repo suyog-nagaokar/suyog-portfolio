@@ -165,13 +165,13 @@ export const experience: Experience[] = [
 
 export const skills = {
   "Data Engineering": ["Kafka", "Spark", "Spark Streaming", "Snowflake", "dbt", "Apache Airflow", "Apache Iceberg", "AWS Step Functions", "MongoDB"],
-  "Hadoop Ecosystem": ["Hadoop", "Hive", "Pig", "Sqoop", "HBase", "Impala", "Cloudera", "Hortonworks"],
   "Cloud & Platforms": ["AWS EMR", "Glue", "Athena", "Redshift", "S3", "Lambda", "Azure ADF", "Databricks", "Synapse", "Delta Lake", "Terraform"],
-  "BI & Visualization": ["QuickSight", "Tableau", "Power BI", "Streamlit"],
-  "Architecture & Governance": ["Data Warehousing", "Data Lakes", "Lakehouse Architecture", "Data Modeling", "ETL/ELT", "Data Governance"],
-  "Languages & Scripting": ["Python", "PySpark", "SQL", "Java", "PL/SQL", "Shell scripting"],
-  "Leadership & Practices": ["Team Leadership", "Mentoring", "Git", "Bitbucket", "Jira", "Agile (Scrum/Kanban)", "CI/CD", "Code Reviews", "SDLC"],
   "AI & Productivity": ["Cursor", "ChatGPT", "Claude", "Gemini", "AI-assisted Development", "Automated Documentation"],
+  "Leadership & Practices": ["Team Leadership", "Mentoring", "Git", "Bitbucket", "Jira", "Agile (Scrum/Kanban)", "CI/CD", "Code Reviews", "SDLC"],
+  "Architecture & Governance": ["Data Warehousing", "Data Lakes", "Lakehouse Architecture", "Data Modeling", "ETL/ELT", "Data Governance"],
+  "Hadoop Ecosystem": ["Hadoop", "Hive", "Pig", "Sqoop", "HBase", "Impala", "Cloudera", "Hortonworks"],
+  "Languages & Scripting": ["Python", "PySpark", "SQL", "Java", "PL/SQL", "Shell scripting"],
+  "BI & Visualization": ["QuickSight", "Tableau", "Power BI", "Streamlit"],
 };
 
 export const certifications = [

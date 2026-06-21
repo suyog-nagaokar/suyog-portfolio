@@ -40,9 +40,12 @@ export default function About() {
               </div>
               <div>
                 <div className="font-mono text-[11px] text-ink-faint uppercase tracking-wide mb-2">Certifications</div>
-                <ul className="space-y-1">
+                <ul className="space-y-1.5">
                   {certifications.map((c) => (
-                    <li key={c} className="text-ink text-[13.5px] leading-snug">{c}</li>
+                    <li key={c} className="text-ink text-[13.5px] leading-snug flex gap-2">
+                      <span className="text-amber shrink-0">▸</span>
+                      <span>{c}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
