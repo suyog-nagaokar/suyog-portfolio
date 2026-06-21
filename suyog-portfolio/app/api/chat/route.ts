@@ -1,5 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
-import { experience, profile, skills, certifications, awards } from "@/lib/data";
+import {
+  experience,
+  profile,
+  skills,
+  certifications,
+  awards,
+  expertiseStacks,
+  contentCreation,
+  volunteering,
+} from "@/lib/data";
 
 export const runtime = "edge";
 
@@ -12,14 +21,20 @@ If asked something outside this scope (unrelated topics, personal opinions on th
 === PROFILE ===
 ${profile.name} — ${profile.title}
 Location: ${profile.location} (${profile.relocating})
+Headline: ${profile.headline}
 ${profile.summary}
 Targeting: ${profile.targetRoles} roles.
+
+=== CORE EXPERTISE (3 stacks spanning his career) ===
+${expertiseStacks
+  .map((s) => `${s.name}: ${s.description} Tools: ${s.tools.join(", ")}`)
+  .join("\n\n")}
 
 === EXPERIENCE ===
 ${experience
   .map(
     (e) =>
-      `${e.role} at ${e.company} (${e.location}), ${e.start}–${e.end}${e.current ? " [current]" : ""}\n${e.bullets.map((b) => "- " + b).join("\n")}\nStack: ${e.stack.join(", ")}`
+      `${e.role} at ${e.company} (${e.location}), ${e.start}–${e.end}${e.current ? " [current]" : ""}\nImpact: ${e.impact}\nStack: ${e.stack.join(", ")}`
   )
   .join("\n\n")}
 
@@ -30,6 +45,14 @@ ${Object.entries(skills)
 
 === CERTIFICATIONS ===
 ${certifications.join("\n")}
+
+=== CONTENT CREATION ===
+${contentCreation.role} — ${contentCreation.link}
+
+=== VOLUNTEERING ===
+${volunteering
+  .map((v) => `${v.title} (${v.duration})\n${v.bullets.map((b) => "- " + b).join("\n")}`)
+  .join("\n\n")}
 
 === AWARDS ===
 ${awards.join(", ")}

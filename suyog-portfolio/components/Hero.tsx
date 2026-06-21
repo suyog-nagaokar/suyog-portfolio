@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { profile, heroStats } from "@/lib/data";
-import PipelineFlow from "./PipelineFlow";
 
 export default function Hero() {
   return (
@@ -15,11 +14,11 @@ export default function Hero() {
             </div>
 
             <h1 className="font-display font-semibold text-[2.5rem] leading-[1.05] md:text-[3.4rem] md:leading-[1.04] tracking-tight text-ink">
-              13 years turning
+              Thirteen years making
               <br />
-              raw events into
+              sure the data is right
               <br />
-              <span className="text-amber">systems that don&apos;t fall over.</span>
+              <span className="text-amber">before the money moves.</span>
             </h1>
 
             <p className="mt-6 text-ink-dim text-[16px] md:text-[17px] leading-relaxed max-w-xl">
@@ -54,7 +53,7 @@ export default function Hero() {
           <div className="flex justify-center md:justify-end fade-up" style={{ animationDelay: "0.15s" }}>
             <div className="relative">
               <div className="absolute -inset-3 border border-hairline pointer-events-none" />
-              <div className="relative w-[220px] h-[230px] md:w-[260px] md:h-[272px] overflow-hidden">
+              <div className="relative w-[240px] h-[240px] md:w-[280px] md:h-[280px] overflow-hidden">
                 <Image
                   src="/headshot.png"
                   alt="Suyog Nagaokar"
@@ -82,14 +81,6 @@ export default function Hero() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Signature pipeline element */}
-        <div className="mt-16 md:mt-20">
-          <div className="font-mono text-[12px] text-ink-faint mb-4 flex items-center gap-2">
-            <span className="text-amber">$</span> the stack, end to end
-          </div>
-          <PipelineFlow />
         </div>
       </div>
     </section>

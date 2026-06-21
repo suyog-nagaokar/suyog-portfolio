@@ -8,24 +8,39 @@ export const profile = {
   linkedin: "https://linkedin.com/in/suyog-nagaokar",
   linkedinDisplay: "linkedin.com/in/suyog-nagaokar",
   years: "13",
+  headline: "Thirteen years making sure the data is right before the money moves.",
   summary:
-    "Data Engineering Leader with 13 years designing and scaling enterprise data platforms across banking, payments, insurance, telecom, and retail. I lead engineering teams that ship fraud, reconciliation, and reporting systems on Snowflake, Kafka, Spark, dbt, AWS, and Azure — and I use GenAI tooling to compress design and delivery time without cutting corners on governance.",
+    "I lead data engineering teams that build the systems banks, payment platforms, and telecom companies run their fraud detection, reconciliation, and reporting on. The stack changes by client and by decade — what doesn't change is the job: make the data trustworthy enough to act on. I use GenAI tooling to move faster without skipping the governance enterprise platforms demand.",
   targetRoles: "Lead Data Engineer & Data Engineering Manager",
 };
 
 export const heroStats = [
   { value: "13", label: "Years in data engineering", suffix: "yrs" },
-  { value: "₹55L", label: "Saved in 6 months — Axis Bank fraud platform", suffix: "" },
-  { value: "8", label: "Engineers led on a single re-architecture", suffix: "" },
-  { value: "120+", label: "Production reports & dashboards delivered", suffix: "" },
+  { value: "$65K+", label: "Saved in 6 months on a banking fraud platform", suffix: "" },
+  { value: "8", label: "Engineers led through a platform re-architecture", suffix: "" },
+  { value: "8x", label: "Faster batch pipeline — 8 hours down to under 1", suffix: "" },
 ];
 
-export const pipeline = [
-  { label: "Ingest", tech: "Kafka" },
-  { label: "Process", tech: "Spark" },
-  { label: "Model", tech: "dbt" },
-  { label: "Warehouse", tech: "Snowflake" },
-  { label: "Serve", tech: "QuickSight" },
+// 2-3 powerful stacks pulled from across the resume, not tied to one project
+export const expertiseStacks = [
+  {
+    name: "Real-Time & Fraud",
+    description:
+      "Streaming pipelines that catch fraud and reconcile transactions as they happen — built at a payments company and one of India's largest private banks.",
+    tools: ["Kafka", "Spark Streaming", "Hive", "PySpark", "Grafana", "Streamlit"],
+  },
+  {
+    name: "Modern Lakehouse",
+    description:
+      "Governed, version-controlled analytics platforms — re-architecting legacy systems into Snowflake and dbt at enterprise scale.",
+    tools: ["Snowflake", "dbt", "Apache Iceberg", "Databricks", "Azure Synapse", "Terraform"],
+  },
+  {
+    name: "Big Data Foundations",
+    description:
+      "A decade of the ecosystem modern tools were built on top of — migrating Oracle workloads to Hadoop and running production clusters since 2012.",
+    tools: ["Hadoop", "Hive", "Pig", "Sqoop", "HBase", "Cloudera", "Hortonworks"],
+  },
 ];
 
 export type Experience = {
@@ -35,8 +50,7 @@ export type Experience = {
   start: string;
   end: string;
   current?: boolean;
-  highlight?: string;
-  bullets: string[];
+  impact: string;
   stack: string[];
 };
 
@@ -48,15 +62,9 @@ export const experience: Experience[] = [
     start: "May 2025",
     end: "Present",
     current: true,
-    highlight: "Migrated fraud + reconciliation ingestion to Kafka with zero data loss",
-    bullets: [
-      "Designed and implemented real-time Kafka consumers powering critical Fraud and Reconciliation services, integrating with a centralized Real-Time Messaging Platform (RMP) for high-throughput, low-latency processing.",
-      "Led migration of ingestion pipelines from AWS Kinesis/SQS to Kafka, validating near 100% message parity through Grafana and Streamlit-based monitoring and ensuring zero data loss during transition.",
-      "Modernized the data lake architecture by migrating from a traditional S3-based lake to Apache Iceberg tables with dbt-driven transformations, enabling scalable and governed Gold-layer datasets.",
-      "Implemented Infrastructure-as-Code and CI/CD automation using Terraform, Atlantis, and AWS CodePipeline, improving deployment reliability and governance.",
-      "Optimized Athena, QuickSight, and S3 workloads through query tuning and storage optimization, reducing cloud costs by 20% while improving platform scalability and performance.",
-    ],
-    stack: ["Kafka", "Apache Iceberg", "dbt", "Terraform", "AWS CodePipeline", "Athena", "QuickSight"],
+    impact:
+      "Migrated fraud and reconciliation ingestion from Kinesis/SQS to Kafka with zero data loss, then cut cloud costs 20% optimizing the lake on Apache Iceberg.",
+    stack: ["Kafka", "Apache Iceberg", "dbt", "Terraform", "QuickSight"],
   },
   {
     company: "TO THE NEW",
@@ -64,13 +72,9 @@ export const experience: Experience[] = [
     location: "Mumbai, India",
     start: "Apr 2024",
     end: "Oct 2024",
-    highlight: "Cut an 8-hour batch pipeline down to under 1 hour",
-    bullets: [
-      "Optimized large-scale batch pipelines for a financial client, reducing execution time from 8+ hours to under 1 hour and achieving a 20% reduction in processing costs.",
-      "Led the design and migration to AWS EMR Serverless architecture, significantly improving infrastructure scalability while lowering operational overhead.",
-      "Built an AWS data warehousing POC integrating MongoDB via DMS, Glue, and Airflow, enabling advanced analytics through Redshift and QuickSight.",
-    ],
-    stack: ["AWS EMR Serverless", "MongoDB", "DMS", "Glue", "Airflow", "Redshift"],
+    impact:
+      "Cut a financial client's batch pipeline from 8+ hours to under 1 by migrating to AWS EMR Serverless — a 20% cost reduction alongside the speed-up.",
+    stack: ["AWS EMR Serverless", "MongoDB", "Glue", "Airflow", "Redshift"],
   },
   {
     company: "TO THE NEW",
@@ -78,13 +82,9 @@ export const experience: Experience[] = [
     location: "Mumbai, India",
     start: "Oct 2022",
     end: "Feb 2024",
-    highlight: "Led 8 engineers re-architecting legacy SAS to Snowflake + dbt",
-    bullets: [
-      "Led and mentored a high-performance team of 8 data engineers to re-architect a legacy SAS analytics platform to a modern Snowflake + dbt stack, ensuring best-in-class architectural standards.",
-      "Collaborated with business stakeholders, architects, and delivery leadership to define data strategy, roadmap, and execution plans across multiple workstreams.",
-      "Delivered 120+ financial, operational, and analytical reports and dashboards by designing modular, version-controlled transformations and enterprise-scale data models to ensure data consistency.",
-    ],
-    stack: ["Snowflake", "dbt", "SAS migration", "Data modeling"],
+    impact:
+      "Led 8 engineers re-architecting a legacy SAS platform onto Snowflake + dbt, delivering 120+ production reports on a modern, version-controlled data model.",
+    stack: ["Snowflake", "dbt", "Data Modeling"],
   },
   {
     company: "Luxoft",
@@ -92,10 +92,8 @@ export const experience: Experience[] = [
     location: "Warsaw, Poland",
     start: "Nov 2021",
     end: "Jul 2022",
-    bullets: [
-      "Engineered scalable Azure data solutions using ADF, Databricks, and Synapse to deliver a reusable analytical data layer for retail teams across Central and Southern Europe.",
-      "Empowered data science workflows and Power BI insights by optimizing cross-country data delivery and mentoring engineers on Azure data engineering best practices.",
-    ],
+    impact:
+      "Built a reusable Azure analytical data layer for retail teams across Central and Southern Europe, mentoring engineers on data engineering best practices.",
     stack: ["Azure ADF", "Databricks", "Synapse", "Power BI"],
   },
   {
@@ -104,10 +102,9 @@ export const experience: Experience[] = [
     location: "Mumbai, India",
     start: "Mar 2021",
     end: "Oct 2021",
-    bullets: [
-      "Developed end-to-end event-driven big data pipelines on AWS using EMR, Spark, Kudu, and Lambda to power supply-chain analytics and Tableau reporting, significantly improving operational productivity.",
-    ],
-    stack: ["AWS EMR", "Spark", "Kudu", "Lambda", "Tableau"],
+    impact:
+      "Built event-driven big data pipelines on AWS EMR and Spark powering supply-chain analytics and Tableau reporting.",
+    stack: ["AWS EMR", "Spark", "Kudu", "Lambda"],
   },
   {
     company: "Axis Bank",
@@ -115,12 +112,8 @@ export const experience: Experience[] = [
     location: "Mumbai, India",
     start: "Mar 2019",
     end: "Feb 2021",
-    highlight: "Saved INR 5.5Mn in 6 months on fraud & digital banking pipelines",
-    bullets: [
-      "Delivered batch and real-time big data solutions for Fraud, Customer Analytics and Digital Banking using Spark Streaming, Kafka, Hive and PySpark, eventually saving INR 5.5Mn in 6 months.",
-      "Managed and mentored a team of 4 Data Engineers, providing technical guidance, code reviews, and delivery ownership for critical banking analytics pipelines.",
-      "Collaborated with business stakeholders to translate complex requirements into scalable data solutions, ensuring 99.9% pipeline uptime.",
-    ],
+    impact:
+      "Built real-time fraud and digital banking pipelines saving $65K+ in 6 months, while leading a team of 4 and holding 99.9% pipeline uptime.",
     stack: ["Spark Streaming", "Kafka", "Hive", "PySpark"],
   },
   {
@@ -129,9 +122,8 @@ export const experience: Experience[] = [
     location: "Mumbai, India",
     start: "Jul 2017",
     end: "Mar 2019",
-    bullets: [
-      "Delivered analytics and ML-driven big data solutions for 35+ telecom clients using Cloudera and Hortonworks platforms while collaborating with Product, R&D, and Analytics teams.",
-    ],
+    impact:
+      "Delivered ML-driven big data solutions for 35+ telecom clients on Cloudera and Hortonworks.",
     stack: ["Cloudera", "Hortonworks"],
   },
   {
@@ -140,10 +132,9 @@ export const experience: Experience[] = [
     location: "Mumbai, India",
     start: "Feb 2017",
     end: "Jun 2017",
-    bullets: [
-      "Managed and optimized Hadoop ecosystems on CDH, troubleshooting complex Spark/cluster-level issues and automating data validation workflows via Hive, Shell scripting, and Tableau.",
-    ],
-    stack: ["CDH", "Hive", "Shell scripting", "Tableau"],
+    impact:
+      "Optimized Hadoop clusters on CDH and automated data validation workflows across client environments.",
+    stack: ["CDH", "Hive", "Shell scripting"],
   },
   {
     company: "Aureus Analytics",
@@ -151,9 +142,7 @@ export const experience: Experience[] = [
     location: "Mumbai, India",
     start: "Feb 2016",
     end: "Jan 2017",
-    bullets: [
-      "Developed banking data pipelines on Hortonworks using Hive, Pig, Sqoop, Oozie, Ambari, HBase, Phoenix, and Drill.",
-    ],
+    impact: "Built banking data pipelines on Hortonworks across Hive, Pig, Sqoop, and HBase.",
     stack: ["Hortonworks", "Hive", "Pig", "Sqoop", "HBase"],
   },
   {
@@ -162,19 +151,19 @@ export const experience: Experience[] = [
     location: "Mumbai, India",
     start: "Dec 2012",
     end: "Nov 2015",
-    bullets: [
-      "Migrated enterprise workloads from Oracle to Hadoop, handling TB-scale datasets and building transformations using Hive, Pig, Sqoop, and Java UDFs.",
-      "Earlier experience as PL/SQL Developer focused on performance tuning and production support.",
-    ],
+    impact:
+      "Migrated enterprise Oracle workloads to Hadoop at TB-scale — the start of a 13-year run in data engineering.",
     stack: ["Oracle", "Hadoop", "Hive", "Pig", "Sqoop", "Java", "PL/SQL"],
   },
 ];
 
 export const skills = {
-  "Data Engineering": ["Kafka", "Spark", "Spark Streaming", "Snowflake", "dbt", "Apache Airflow", "Apache Iceberg", "Hadoop", "Hive", "Impala", "MongoDB"],
-  "Cloud & Platforms": ["AWS EMR", "Glue", "Athena", "Redshift", "S3", "Lambda", "QuickSight", "Azure ADF", "Databricks", "Synapse", "Delta Lake", "Terraform"],
+  "Data Engineering": ["Kafka", "Spark", "Spark Streaming", "Snowflake", "dbt", "Apache Airflow", "Apache Iceberg", "AWS Step Functions", "MongoDB"],
+  "Hadoop Ecosystem": ["Hadoop", "Hive", "Pig", "Sqoop", "HBase", "Impala", "Cloudera", "Hortonworks"],
+  "Cloud & Platforms": ["AWS EMR", "Glue", "Athena", "Redshift", "S3", "Lambda", "Azure ADF", "Databricks", "Synapse", "Delta Lake", "Terraform"],
+  "BI & Visualization": ["QuickSight", "Tableau", "Power BI", "Streamlit"],
   "Architecture & Governance": ["Data Warehousing", "Data Lakes", "Lakehouse Architecture", "Data Modeling", "ETL/ELT", "Data Governance"],
-  "Languages": ["Python", "PySpark", "SQL", "Java", "PL/SQL"],
+  "Languages & Scripting": ["Python", "PySpark", "SQL", "Java", "PL/SQL", "Shell scripting"],
   "Leadership & Practices": ["Team Leadership", "Mentoring", "Git", "Bitbucket", "Jira", "Agile (Scrum/Kanban)", "CI/CD", "Code Reviews", "SDLC"],
   "AI & Productivity": ["Cursor", "ChatGPT", "Claude", "Gemini", "AI-assisted Development", "Automated Documentation"],
 };
@@ -183,7 +172,23 @@ export const certifications = [
   "SnowPro Core Certified — Snowflake",
   "Positive ACS Skills Assessment — Data Engineer / Software Engineer (Australia)",
   "Big Data Engineering with Hadoop and Spark — IIT Roorkee",
-  "Instructor, Data Engineering with Hadoop and Spark",
+];
+
+export const contentCreation = {
+  role: "Instructor, Data Engineering with Hadoop and Spark",
+  link: "https://learndataengineering.com/p/data-engineering-with-hadoop",
+  linkDisplay: "learndataengineering.com",
+};
+
+export const volunteering = [
+  {
+    title: "Ukrainian Refugee Relief — Poland",
+    duration: "5 months",
+    bullets: [
+      "Coordinated food logistics and supply distribution for refugees.",
+      "Provided multilingual information support and administrative assistance to help refugees navigate local services.",
+    ],
+  },
 ];
 
 export const awards = [

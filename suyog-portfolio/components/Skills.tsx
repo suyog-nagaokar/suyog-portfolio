@@ -12,7 +12,7 @@ export default function Skills() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-hairline border border-hairline">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hairline border border-hairline">
           {entries.map(([category, items]) => (
             <div key={category} className="bg-base p-6 md:p-7">
               <h3 className="font-mono text-[12px] text-amber uppercase tracking-wide mb-4">
