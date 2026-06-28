@@ -14,18 +14,17 @@ export default function About() {
 
           <div className="space-y-6 text-ink-dim text-[15.5px] leading-relaxed">
             <p>
-              I started as a Systems Engineer migrating TB-scale Oracle workloads to Hadoop at TCS in 2012.
-              Thirteen years later, I&apos;m leading real-time data platforms for fraud and reconciliation
-              at a payments company processing transactions across Southeast Asia. The throughline is the same:
-              data systems that are correct, fast, and boring in the way that matters &mdash; they don&apos;t wake
-              anyone up at 3am.
+              I started as a Systems Engineer migrating Oracle workloads to Hadoop at TCS in 2012.
+              Thirteen years later, I lead the data platform team at Coda Payments, a global product company
+              where our platform serves every business vertical across different geographies.
+              The throughline is the same: data systems that are correct, fast, and boring in the way that matters.
+              They don&apos;t wake anyone up at 3am.
             </p>
             <p>
               Along the way I&apos;ve led teams of up to 8 engineers through full platform re-architectures,
               cut multi-hour batch pipelines down to minutes, and built fraud systems that saved a major bank
-              $65K+ in six months. I care as much about the people executing the roadmap
-              as the roadmap itself &mdash; mentoring, code review, and clear ownership are not separate from
-              the engineering, they&apos;re part of it.
+              $65K+ in six months. I care as much about the people executing the roadmap as the roadmap itself.
+              Mentoring, code review, and clear ownership are not separate from the engineering; they&apos;re part of it.
             </p>
             <p>
               Today I lean on GenAI tooling to compress design and delivery cycles, without skipping the

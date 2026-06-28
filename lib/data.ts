@@ -10,7 +10,7 @@ export const profile = {
   years: "13+",
   headline: "13+ years making sure the data is right before the money moves.",
   summary:
-    "I lead data engineering teams that build the systems banks, payment platforms, and telecom companies run their fraud detection, reconciliation, and reporting on. The stack changes by client and by decade — what doesn't change is the job: make the data trustworthy enough to act on. I use GenAI tooling to move faster without skipping the governance enterprise platforms demand.",
+    "Most data problems are people problems in disguise. I lead teams that get the engineering right and the ownership culture right, because you need both. The stack changes by client and by decade, but what doesn't change is the job: make the data trustworthy enough to act on. I use GenAI tooling to move faster without skipping the governance enterprise platforms demand.",
   targetRoles: "Lead Data Engineer & Data Engineering Manager",
 };
 
@@ -18,7 +18,7 @@ export const heroStats = [
   { value: "13+", label: "Years in data engineering", suffix: "yrs" },
   { value: "$65K+", label: "Saved in 6 months on a banking fraud platform", suffix: "" },
   { value: "8", label: "Engineers led through a platform re-architecture", suffix: "" },
-  { value: "8x", label: "Faster batch pipeline — 8 hours down to under 1", suffix: "" },
+  { value: "8x", label: "Faster batch pipeline: 8 hours down to under 1", suffix: "" },
 ];
 
 // 4 powerful stacks pulled from across the resume, not tied to one project
@@ -26,25 +26,25 @@ export const expertiseStacks = [
   {
     name: "Real-Time & Fraud",
     description:
-      "Streaming pipelines that catch fraud and reconcile transactions as they happen — built at a payments company and one of India's largest private banks.",
+      "Streaming pipelines that catch fraud and reconcile transactions as they happen, built at a payments company and one of India's largest private banks.",
     tools: ["Kafka", "Spark Streaming", "Hive", "PySpark", "Grafana", "Streamlit"],
   },
   {
     name: "AWS at Scale",
     description:
-      "Serverless batch processing, real-time ingestion, and cost-optimized analytics — production AWS across three companies handling TB-scale workloads.",
+      "Serverless batch processing, real-time ingestion, and cost-optimized analytics across production AWS across three companies handling TB-scale workloads.",
     tools: ["EMR Serverless", "Glue", "Athena", "Redshift", "Lambda", "S3", "Step Functions", "CodePipeline"],
   },
   {
     name: "Modern Lakehouse",
     description:
-      "Governed, version-controlled analytics platforms — re-architecting legacy systems into Snowflake and dbt at enterprise scale.",
+      "Governed, version-controlled analytics platforms through re-architecting legacy systems into Snowflake and dbt at enterprise scale.",
     tools: ["Snowflake", "dbt", "Apache Iceberg", "Databricks", "Azure Synapse", "Terraform"],
   },
   {
     name: "Big Data Foundations",
     description:
-      "A decade of the ecosystem modern tools were built on top of — migrating Oracle workloads to Hadoop and running production clusters since 2012.",
+      "A decade of the ecosystem modern tools were built on top of, starting with migrating Oracle workloads to Hadoop and running production clusters since 2012.",
     tools: ["Hadoop", "Hive", "Pig", "Sqoop", "HBase", "Cloudera", "Hortonworks"],
   },
 ];
@@ -74,12 +74,12 @@ export const experience: Experience[] = [
   },
   {
     company: "TO THE NEW",
-    role: "Technical Lead (Consultant)",
+    role: "Technical Lead",
     location: "Mumbai, India",
     start: "Apr 2024",
     end: "Oct 2024",
     impact:
-      "Cut a financial client's batch pipeline from 8+ hours to under 1 by migrating to AWS EMR Serverless — a 20% cost reduction alongside the speed-up.",
+      "Cut a financial client's batch pipeline from 8+ hours to under 1 by migrating to AWS EMR Serverless, with a 20% cost reduction alongside the speed-up.",
     stack: ["AWS EMR Serverless", "MongoDB", "Glue", "Airflow", "Redshift"],
   },
   {
@@ -158,7 +158,7 @@ export const experience: Experience[] = [
     start: "Dec 2012",
     end: "Nov 2015",
     impact:
-      "Migrated enterprise Oracle workloads to Hadoop at TB-scale — the start of a 13-year run in data engineering.",
+      "Migrated enterprise Oracle workloads to Hadoop at TCS — the start of a 13-year run in data engineering.",
     stack: ["Oracle", "Hadoop", "Hive", "Pig", "Sqoop", "Java", "PL/SQL"],
   },
 ];
